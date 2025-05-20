@@ -36,10 +36,10 @@
                                 class="bi bi-input-cursor-text"></i> JQuery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="calculos.html"
+                        <a class="nav-link" href="calculo_salario.html"
                            title="entre em contato"><i
                                 class="bi bi-input-cursor-text"></i>
-                            Calculos</a>
+                            Calculo de salário</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="validacaoForm.html"
@@ -63,45 +63,64 @@
                 <div class="col-md-12 col-sm-12 mb-2">
 
                     <div class="form-group">
-                        <label for="txtvalor">Valor</label>
-                        <input type="number" step="0.5" class="form-control"
-                               id="txtvalor"
-                               name="txtvalor" value>
+                        <label for="txtnome">Nome</label>
+                        <input type="text" step="0.5" class="form-control"
+                               id="txtnome"
+                               name="txtnome" value>
                     </div>
                     <div class="form-group">
-                        <label for="txtdesconto">Desconto</label>
+                        <label for="txtidade">Idade</label>
                         <input type="number" step="0.5" class="form-control"
-                               id="txtdesconto"
-                               name="txtdesconto" value>
+                               id="txtidade"
+                               name="txtidade" value>
                     </div>
                     <div class="form-group">
-                        <label for="txtmulta">Multa</label>
+                        <label for="txtsalario">Salário bruto</label>
                         <input type="number" step="0.5" class="form-control"
-                               id="txtmulta"
-                               name="txtmulta" value>
+                               id="txtsalario"
+                               name="txtsalario" value>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtdependentes">Número de dependentes</label>
+                        <input type="number" step="0.5" class="form-control"
+                               id="txtdependentes"
+                               name="txtdependentes" value>
                     </div>
 
                     <button id="calcular"
                             class="btn btn-danger">Calcular</button>
 
-                </div>
-                <div class="col-md-12 col-sm-12 mb-2">
-                    <div class="alert alert-primary" role="alert">
-                        <p id="txtresultado">Resultado: </p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12 mb-2">
-                    <div class="alert alert-warning" role="alert">
-                        <p id="txtmsg">Mensagem: </p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12 mb-2">
-                    <div class="alert alert-success" role="alert">
-                        <p id="txtfatorial">N! </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <div class="col-md-12 col-sm-12 mb-2">
+                                <div class="alert alert-primary" role="alert">
+                                    <p id="alert_nome">Nome: </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mb-2">
+                                <div class="alert alert-warning" role="alert">
+                                    <p id="alert_dependentes">Número de dependentes: </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mb-2">
+                                <div class="alert alert-success" role="alert">
+                                    <p id="alert_salario">Salário bruto:</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mb-2">
+                                <div class="alert alert-success" role="alert">
+                                    <p id="alert_inss">INSS:</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mb-2">
+                                <div class="alert alert-success" role="alert">
+                                    <p id="alert_transporte">Vale transporte:</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mb-2">
+                                <div class="alert alert-success" role="alert">
+                                    <p id="alert_liquido">Salário líquido:</p>
+                                </div>
+                            </div>
+                            
 
         <!-- Footer 
         peguei esse https://bootsnipp.com/snippets/rlXdE
@@ -211,6 +230,6 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-        <script src="js/calculos.js"></script>
+        <script src="./js/calculos.js"></script>
     </body>
 </html>
